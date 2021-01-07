@@ -1,0 +1,30 @@
+<%- include partials/header.ejs %>
+<div class="container-fluid main_header">
+    <div class="row">
+        <div class="col-md-10  col-12 mx-auto">
+            <div class="main_content">
+               <form class="contact_form" method="POST" action="/sucess">
+                <div class="form-group">
+                  <label for="first_name">First Name</label>
+                  <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name">
+                </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email"  name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="msg">Message</label>
+                    <textarea class="form-control" id="msg" name="msg" rows="3"></textarea>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include partials/footer.ejs %>
